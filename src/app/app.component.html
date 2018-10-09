@@ -1,6 +1,13 @@
 <h1>{{title}}</h1>
 <nav>
-  <a routerLink="/heroes">Heroes</a>
+	<a mat-button routerLink="/dashboard" routerLinkActive="mat-accent">
+		<mat-icon>subject</mat-icon>
+		Dashboard
+	</a>
+	<a mat-button accent routerLink="/heroes" routerLinkActive="mat-accent">
+		<mat-icon>accessibility_new</mat-icon>
+		Heroes
+	</a>
 </nav>
 <router-outlet></router-outlet>
 <messages></messages>
